@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate</title>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/donor.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Logo" class="logo-img">
+      <span class="logo-text">HopeHands Foundation</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="causes.html">Causes</a>
+      <a href="donor.html" class="active">Donate</a>
+      <a href="contact.html">Contact</a>
+      <a href="donor.html" class="donate-btn">Donate Now</a>
+    </nav>
+
+  </header>
+
+  <section class="donation-section">
+
+    <h2 class="donation-title">Make a Difference Today</h2>
+
+    <p class="donation-desc">
+      Your generous donation will help us continue our mission to support communities in need.
+      Choose an amount below or enter a custom amount to make a secure donation.
+    </p>
+
+    <h3 class="section-title">Donor Information</h3>
+
+    <div class="form-group">
+      <input type="text" id="donorName" placeholder="Name">
+      <input type="email" id="donorEmail" placeholder="Email">
+      <input type="text" id="donorAddress" placeholder="Address">
+    </div>
+
+
+    <h3 class="section-title">Select Donation Amount</h3>
+
+    <div class="amount-buttons">
+      <button class="amount-btn" data-amount="500">₹500</button>
+      <button class="amount-btn" data-amount="1000">₹1000</button>
+      <button class="amount-btn" data-amount="2000">₹2000</button>
+      <button class="amount-btn" id="customBtn">Custom</button>
+    </div>
+
+    <!-- Custom Amount Input (Hidden) -->
+    <input type="number" id="customAmount" class="custom-input" placeholder="Enter custom amount" />
+
+    <!-- Hidden Selected Amount -->
+    <input type="hidden" id="selectedAmount">
+
+
+    <div class="bottom-row">
+      <select id="donationCause">
+        <option value="">Select a Cause</option>
+        <option>Healthcare</option>
+        <option>Education</option>
+        <option>Poverty Relief</option>
+        <option>Environment</option>
+      </select>
+
+      <div class="donate-area">
+        <button class="donate-btn1">Donate Securely</button>
+        <p class="secure-text">
+          Your donation is safe with us. We use secure payment processing.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Payment Modal -->
+  <div id="paymentModal" class="payment-overlay">
+    <div class="payment-box">
+      <h2>Donate Securely</h2>
+      <p class="payment-desc">
+        Your donation is safe with us. We use secure and encrypted payment processing.
+      </p>
+
+      <form id="paymentForm">
+
+        <!-- Payment Method -->
+        <label class="pay-label">Payment Method</label><br>
+        <select id="paymentMethod" required>
+          <option value="">Select Payment Method</option>
+          <option value="card">Debit / Credit Card</option>
+          <option value="upi">UPI</option>
+        </select>
+
+        <!-- Card Fields -->
+        <div id="cardFields">
+          <input type="text" placeholder="Card Holder Name">
+          <input type="text" placeholder="Card Number">
+
+          <div class="row">
+            <input type="text" placeholder="MM / YY">
+            <input type="text" placeholder="CVV">
+          </div>
+        </div>
+
+        <!-- UPI Fields -->
+        <div id="upiFields">
+          <input type="text" placeholder="UPI ID (example@upi)">
+        </div>
+
+        <input type="text" id="finalAmount" disabled>
+
+        <button type="submit" class="pay-btn">Pay Now</button>
+
+      </form>
+
+
+      <button class="close-btn" onclick="closePayment()">✖</button>
+
+      <p class="secure-note">
+        <i class="fa-solid fa-lock"></i> SSL Secure Payment
+      </p>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div id="successMsg">
+    <div class="success-content">
+      <h3>✅ Payment Successful!</h3>
+      <p>Thank you for your donation ❤️<br>Click OK to go to the summary.</p>
+      <button id="okBtn">OK</button>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="aboutus.html">About Us</a>
+      <a href="aboutus.html">Our Programs</a>
+      <a href="volenteer.html">Volunteer</a>
+      <a href="donor.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+
+    <p>© 2024 HopeHands Foundation. All rights reserved.</p>
+  </footer>
+  <script src="js/donoramout.js"></script>
+
+</body>
+
+</html>

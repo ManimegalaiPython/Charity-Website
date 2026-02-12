@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer</title>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/volenteer.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Logo" class="logo-img">
+      <span class="logo-text">HopeHands Foundation</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="causes.html">Causes</a>
+      <a href="donor.html">Donate</a>
+      <a href="contact.html">Contact</a>
+      <a href="donor.html" class="donate-btn">Donate Now</a>
+    </nav>
+
+  </header>
+
+  <section class="volunteer-section">
+
+    <!-- Hero Banner -->
+    <div class="volunteer-hero">
+
+      <!-- Background Image -->
+      <img src="images/image8.jpg" alt="Volunteer">
+
+      <!-- Overlay Content -->
+      <div class="hero-content">
+        <h1>Be the Change. Become a Volunteer.</h1>
+
+        <p>
+          Your time, skills, and compassion can bring real change to lives that need support.
+        </p>
+
+        <button class="join-btn">Join as a Volunteer</button>
+      </div>
+
+    </div>
+
+    <!-- Introduction -->
+    <div class="volunteer-intro">
+      <h2>Volunteer Program Introduction</h2>
+
+      <p>
+        At HopeHands Foundation, volunteers are the heart of everything we do. Whether you have time, skills, or simply
+        a kind heart, your contribution can help us reach more lives and create lasting impact.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- Ways You Can Help Section -->
+  <section class="help-section">
+
+    <!-- Top Image -->
+    <div class="help-image">
+      <img src="images/image9.jpg" alt="Volunteers">
+    </div>
+
+    <h2 class="help-title">Ways You Can Help</h2>
+
+    <div class="help-cards">
+
+      <div class="help-card blue">
+        <span class="icon">🎓</span>
+        <p>Education<br>Support</p>
+      </div>
+
+      <div class="help-card green">
+        <span class="icon">🩺</span>
+        <p>Medical<br>Assistance</p>
+      </div>
+
+      <div class="help-card orange">
+        <span class="icon">🍱</span>
+        <p>Food<br>Distribution</p>
+      </div>
+
+      <div class="help-card purple">
+        <span class="icon">📅</span>
+        <p>Event<br>Coordination</p>
+      </div>
+
+      <div class="help-card sky">
+        <span class="icon">🌐</span>
+        <p>Online / Remote<br>Volunteering</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Join Volunteer Form Section -->
+  <section class="join-section">
+
+    <h2 class="join-title">Join Our Volunteer Community</h2>
+
+    <!-- Form -->
+    <form class="join-form" id="volunteerForm">
+
+      <input type="text" placeholder="Full Name" class="form-input" required>
+      <input type="email" placeholder="Email Address" class="form-input" required>
+      <input type="tel" placeholder="Phone Number" class="form-input" required>
+
+      <select class="form-input">
+        <option>Area of Interest</option>
+        <option>Education Support</option>
+        <option>Medical Assistance</option>
+        <option>Food Distribution</option>
+        <option>Event Coordination</option>
+        <option>Online / Remote</option>
+      </select>
+
+      <select class="form-input">
+        <option>Availability</option>
+        <option>Weekdays</option>
+        <option>Weekends</option>
+        <option>Full Time</option>
+        <option>Part Time</option>
+      </select>
+
+      <div class="join-btn-container">
+        <button type="submit" class="join-btn" id="volunteerBtn">
+          Become a Volunteer
+        </button>
+      </div>
+
+      <p class="privacy-text">
+        We respect your time and privacy. Our team will contact you soon.
+      </p>
+
+    </form>
+
+    <!-- Overlay Background -->
+    <div id="popupOverlay" class="popup-overlay">
+
+      <!-- Popup Box -->
+      <div class="popup-box">
+        <h3>Thank You for Joining!</h3>
+
+        <p>
+          We appreciate your interest in volunteering with HopeHands Foundation.
+          Our team will contact you soon.
+        </p>
+
+        <button id="okBtn" class="popup-ok-btn">OK</button>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="aboutus.html">About Us</a>
+      <a href="aboutus.html">Our Programs</a>
+      <a href="volenteer.html">Volunteer</a>
+      <a href="donor.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+
+    <p>© 2024 HopeHands Foundation. All rights reserved.</p>
+  </footer>
+
+  <script src="js/volenteer.js"></script>
+</body>
+
+</html>

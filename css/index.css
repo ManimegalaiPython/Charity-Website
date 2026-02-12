@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Donate Button */
+.donate-btn {
+    background-color: #122974;
+    color: #ffffff !important;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.donate-btn:hover {
+    background-color: #162f80;
+}
+
+a {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 14px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #6a9cdf;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a.active {
+  color: #609eef;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+    ),
+    url("bgimage.jpg"); /* replace with your background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: #1f3faa;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #162f80;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #dddddd;
+}
+
+.btn-secondary:hover {
+    background-color: #f3f3f3;
+}
+
+/* Mission Section */
+.mission {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.mission h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333333;
+}
+
+
+/* Causes Section */
+.causes {
+    text-align: center;
+    padding: 70px 40px;
+}
+
+.causes h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.causes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card */
+.cause-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.cause-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.cause-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px;
+}
+
+.cause-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 16px 20px;
+}
+
+/* Buttons */
+.cause-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+/* Impact Section */
+.impact {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.impact h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.impact-card {
+    background: #f4f4f6;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.impact-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.impact-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 60px 40px 80px;
+}
+
+.testimonials h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.testimonial-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.testimonial-header h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.testimonial-header span {
+    font-size: 12px;
+    color: #777;
+}
+
+.stars {
+    color: #000;
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.testimonial-text {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.testimonial-footer {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    color: #555;
+}
+
+.footer {
+    background: #e3e6eb;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Top links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #5f6f8c;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Icons */
+.footer-icons {
+    margin-bottom: 18px;
+}
+
+.footer-icons i {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #5f6f8c;
+}
+
+/* Copyright */
+.footer p {
+    color: #5f6f8c;
+    font-size: 15px;
+}
+
+
+/* ============================= */
+/* Large Screens (1200px & below) */
+/* ============================= */
+@media (max-width: 1200px) {
+
+  .causes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ============================= */
+/* Tablets (992px & below) */
+/* ============================= */
+@media (max-width: 992px) {
+
+  .navbar {
+    padding: 14px 24px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .causes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ============================= */
+/* Mobile (768px & below) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 460px;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  /* Causes */
+  .causes {
+    padding: 50px 20px;
+  }
+
+  .causes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Impact */
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonials */
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+
+/* ============================= */
+/* Small Mobile (480px & below) */
+/* ============================= */
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .cause-card img {
+    height: 150px;
+  }
+
+  .impact-card h3 {
+    font-size: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 13px;
+  }
+}

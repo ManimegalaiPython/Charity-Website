@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #4f46e5, #22c55e);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    display: flex;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+/* LEFT PANEL */
+.left {
+    width: 45%;
+    background: linear-gradient(135deg, #4f46e5, #22c55e);
+    color: #fff;
+    padding: 60px 40px;
+}
+
+.left h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* AUTH */
+.auth-container {
+    width: 55%;
+    padding: 50px;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+.link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.link a {
+    color: #4f46e5;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+}
+/* ============================= */
+/* Large screens (1200px & below) */
+/* ============================= */
+@media (max-width: 1200px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .left {
+    padding: 50px 30px;
+  }
+
+  .auth-container {
+    padding: 40px;
+  }
+}
+
+
+/* ============================= */
+/* Tablets (992px & below) */
+/* ============================= */
+@media (max-width: 992px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .left,
+  .auth-container {
+    width: 100%;
+  }
+
+  .left {
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .left h1 {
+    font-size: 28px;
+  }
+}
+
+
+/* ============================= */
+/* Mobile (768px & below) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  .container {
+    border-radius: 10px;
+  }
+
+  .left {
+    padding: 35px 25px;
+  }
+
+  .left h1 {
+    font-size: 24px;
+  }
+
+  .auth-container {
+    padding: 35px 25px;
+  }
+
+  input {
+    padding: 11px;
+  }
+
+  button {
+    padding: 11px;
+  }
+}
+
+
+/* ============================= */
+/* Small Mobile (480px & below) */
+/* ============================= */
+@media (max-width: 480px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .left {
+    padding: 30px 20px;
+  }
+
+  .left h1 {
+    font-size: 22px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .auth-container {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .modal-box {
+    width: 90%;
+  }
+}

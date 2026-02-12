@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT CONTENT -->
+        <div class="left">
+            <h1>Together, We Can<br>Change Lives</h1>
+            <p>
+                Join HopeHands Foundation and be part of a mission that
+                supports education, healthcare, and disaster relief.
+            </p>
+        </div>
+
+        <!-- AUTH BOX -->
+        <div class="auth-container">
+
+            <!-- LOGIN -->
+            <form id="loginForm" class="form active">
+                <h2>Login</h2>
+
+                <label>Email</label>
+                <input type="email" id="loginEmail">
+                <small class="error" id="loginEmailError"></small>
+
+                <label>Password</label>
+                <input type="password" id="loginPassword">
+                <small class="error" id="loginPasswordError"></small>
+
+                <div class="link">
+                    <a onclick="showForgot()">Forgot password?</a>
+                </div>
+
+                <button type="submit">Login</button>
+
+                <div class="link">
+                    New user? <a onclick="showSignup()">Sign up</a>
+                </div>
+            </form>
+
+            <!-- SIGNUP -->
+            <form id="signupForm" class="form">
+                <h2>Create Account</h2>
+
+                <label>Full Name</label>
+                <input type="text" id="name">
+                <small class="error" id="nameError"></small>
+
+                <label>Email</label>
+                <input type="email" id="signupEmail">
+                <small class="error" id="signupEmailError"></small>
+
+                <label>Password</label>
+                <input type="password" id="signupPassword">
+                <small class="error" id="signupPasswordError"></small>
+
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword">
+                <small class="error" id="confirmPasswordError"></small>
+
+                <button type="submit">Sign Up</button>
+
+                <div class="link">
+                    Already have an account? <a onclick="showLogin()">Login</a>
+                </div>
+            </form>
+
+            <!-- FORGOT PASSWORD -->
+            <form id="forgotForm" class="form">
+                <h2>Forgot Password</h2>
+
+                <label>Email</label>
+                <input type="email" id="forgotEmail">
+                <small class="error" id="forgotEmailError"></small>
+
+                <button type="submit">Send Reset Link</button>
+
+                <div class="link">
+                    <a onclick="showLogin()">Back to Login</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <h3 id="modalTitle"></h3>
+            <p id="modalText"></p>
+            <button onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

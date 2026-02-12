@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Summary</title>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/summary.css">
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <div class="summary-box">
+    <h2>💙 Thank You for Your Donation!</h2>
+
+    <div class="row"><strong>Name:</strong> <span id="name">-</span></div>
+    <div class="row"><strong>Email:</strong> <span id="email">-</span></div>
+    <div class="row"><strong>Amount:</strong> ₹<span id="amount">0</span></div>
+    <div class="row"><strong>Cause:</strong> <span id="cause">-</span></div>
+    <div class="row"><strong>Payment Method:</strong> <span id="method">-</span></div>
+    <div class="row"><strong>Status:</strong> Successful ✅</div>
+
+    <div class="impact">
+      Your kindness helps us uplift communities through education,
+      healthcare, and essential support 🌱
+    </div>
+
+    <button class="btn green" onclick="downloadPDF()">⬇ Download PDF Receipt</button>
+    <button class="btn" onclick="goHome()">Back to Home</button>
+  </div>
+
+  <script src="js/summary.js"></script>
+
+
+</body>
+
+</html>

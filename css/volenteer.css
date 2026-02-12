@@ -1,0 +1,592 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Donate Button */
+.donate-btn {
+    background-color: #122974;
+    color: #ffffff !important;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.donate-btn:hover {
+    background-color: #162f80;
+}
+
+a {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 14px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #6a9cdf;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a.active {
+  color: #609eef;
+}
+
+/* Section */
+.volunteer-section {
+  padding: 30px;
+}
+
+/* Hero Container */
+.volunteer-hero {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Image */
+.volunteer-hero img {
+  width: 100%;
+  height: 720px;
+  object-fit: fixed;
+  filter: brightness(70%);
+}
+
+/* Overlay Content */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* Heading */
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.hero-content p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* Button */
+.join-btn {
+  background-color: #373C7D;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Introduction Section */
+.volunteer-intro {
+  margin-top: 30px;
+}
+
+/* Intro Title */
+.volunteer-intro h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Intro Text */
+.volunteer-intro p {
+  font-size: 20px;
+  color: #374151;
+  max-width: 100%;
+  line-height: 1.6;
+}
+
+/* Help Section */
+.help-section {
+  margin-top: 40px;
+}
+
+/* Image */
+.help-image img {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Title */
+.help-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+/* Cards Container */
+.help-cards {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* Card Base */
+.help-card {
+  width: 250px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+/* Icon */
+.help-card .icon {
+  font-size: 22px;
+}
+
+/* Color Variants */
+.help-card.blue {
+  border: 2px solid #3b82f6;
+  color: #1d4ed8;
+}
+
+.help-card.green {
+  border: 2px solid #22c55e;
+  color: #15803d;
+}
+
+.help-card.orange {
+  border: 2px solid #f59e0b;
+  color: #b45309;
+}
+
+.help-card.purple {
+  border: 2px solid #a855f7;
+  color: #7e22ce;
+}
+
+.help-card.sky {
+  border: 2px solid #0ea5e9;
+  color: #0369a1;
+}
+
+/* Text inside card */
+.help-card p {
+  line-height: 1.2;
+}
+
+/* Join Section */
+.join-section {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+/* Title */
+.join-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Form Layout */
+.join-form {
+  max-width: 760px;
+}
+
+/* Input Fields */
+.form-input {
+  width: 100%;
+  height: 46px;
+  margin-bottom: 16px;
+  padding: 0 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #374151;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.08);
+}
+
+/* Dropdown Arrow Fix */
+select.form-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%236b7280' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5.5 7l4.5 5 4.5-5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+/* Button Container */
+.join-btn-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Button */
+.join-btn {
+  background-color: #2F4A8A;
+  color: #ffffff;
+  border: none;
+  padding: 12px 26px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Privacy Text */
+.privacy-text {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Overlay (Blur Background) */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: none; /* Hidden initially */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Box */
+.popup-box {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 8px;
+  text-align: center;
+  width: 360px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Title */
+.popup-box h3 {
+  font-size: 22px;
+  color: #2F4A8A;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.popup-box p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* OK Button */
+.popup-ok-btn {
+  background-color: #2F4A8A;
+  color: #ffffff;
+  border: none;
+  padding: 10px 26px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+
+.footer {
+    background: #e3e6eb;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Top links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #5f6f8c;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Icons */
+.footer-icons {
+    margin-bottom: 18px;
+}
+
+.footer-icons i {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #5f6f8c;
+}
+
+/* Copyright */
+.footer p {
+    color: #5f6f8c;
+    font-size: 15px;
+}
+
+
+/* ===============================
+   Mobile Devices (up to 480px)
+================================ */
+@media (max-width: 480px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 14px 20px;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+
+  /* Hero */
+  .volunteer-hero img {
+    height: 360px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  /* Intro */
+  .volunteer-intro h2 {
+    font-size: 20px;
+  }
+
+  .volunteer-intro p {
+    font-size: 16px;
+  }
+
+  /* Help Section */
+  .help-image img {
+    height: 320px;
+  }
+
+  .help-cards {
+    justify-content: center;
+  }
+
+  .help-card {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* Form */
+  .form-input {
+    font-size: 16px;
+  }
+
+  .join-btn {
+    width: 100%;
+  }
+
+  /* Popup */
+  .popup-box {
+    width: 90%;
+  }
+
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+/* ===============================
+   Tablets (481px – 768px)
+================================ */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  .volunteer-hero img {
+    height: 480px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .volunteer-intro p {
+    font-size: 18px;
+  }
+
+  .help-image img {
+    height: 420px;
+  }
+
+  .help-card {
+    width: 48%;
+  }
+
+  .join-form {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+/* ===============================
+   Small Laptops (769px – 1024px)
+================================ */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 18px 30px;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+  }
+
+  .volunteer-hero img {
+    height: 600px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .help-card {
+    width: 230px;
+  }
+
+  .join-form {
+    max-width: 680px;
+  }
+}
+
+/* ===============================
+   Large Screens (1200px+)
+================================ */
+@media (min-width: 1200px) {
+
+  .volunteer-section {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .join-form {
+    max-width: 760px;
+  }
+}
