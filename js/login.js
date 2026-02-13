@@ -39,7 +39,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     }
 
     showModal("Success", "Login successful!");
-    setTimeout(() => window.location.href = "index.html", 1500);
+    setTimeout(() => window.location.href = "index.html", 2500);
 });
 
 /* SIGNUP */
@@ -55,3 +55,4 @@ document.getElementById("forgotForm").addEventListener("submit", function(e) {
     showModal("Reset Link Sent", "Check your email");
     showLogin();
 });
+
